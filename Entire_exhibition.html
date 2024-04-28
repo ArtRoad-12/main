@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합 전시</title>
+    <link rel="stylesheet" href="Entire_exhibition.css" />
+</head>
+
+<body>
+    <div id = menubar>
+        <div id = "logo">
+            <img src = "./exhibition_img/artload_logo.png" alt="">
+        </div>
+        <div id = "menus">
+            <div class = "menu-text">
+                <p> 홈 </p>
+            </div>
+            <div class = "menu-text" onclick="location.href='./Entire_exhibition.html'">
+                <p> 전시 </p>
+            </div>
+            <div class = "menu-text">
+                <p> 작가 </p>
+            </div>
+            <div class = "menu-text">
+                <p> 지도 </p>
+            </div>
+            <div class = "menu-text">
+                <p> 도슨트 </p>
+            </div>
+            <div class = "menu-pic">
+                <img src = "./exhibition_img/mypage_logo.png" alt = "">
+            </div>
+            <div class = "menu-pic">
+                <img src = "./exhibition_img/search_icon.png" alt = "">
+            </div>
+            <div class = "empty-space"></div>
+        </div>
+    </div>
+
+    <hr style="border: solid 0.5px rgb(212, 212, 212); width: 100%">
+    
+    <div id = "search">
+        <div id = "search-bar">
+            <img src="./exhibition_img/search_icon.png" alt="">
+            <input type="text">
+        </div>
+        <div id = "tag-block">
+            <div class = "tag">
+                <p> #현대미술 </p>
+            </div>
+            <div class = "tag">
+                <p> #감성적인 </p>
+            </div>
+            <div class = "tag">
+                <p> #서울 </p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "art" onclick="location.href='./Detailed_exhibition.html'">
+        <div class = "art-pic">
+            <img src = "./exhibition_img/art1_pic.png" alt = "">
+        </div>
+        <div class = "art-info">
+            <span style = "font-size: 1.8vmax;""><strong> 어떤변화 : Metamorphosis </strong></span>
+            <br><span style = "font-size: 1.4vmax;"> 노순천, 마이큐, 임정주, 정진서, 최지목</span>
+            <br><span style = "font-size: 1.2vmax; color: rgb(154, 154, 154);"><strong> 2024.04.12 ~ 2024.04.29 </strong></span>
+            <div class = "art-info-bottom">
+                <span style = "font-size: 1.4vmax;"><strong> 김종영미술관 </strong></span>
+                <br><span style = "font-size: 1.2vmax;"> 서울 종로구 평창32길 30 </span>
+            </div>
+        </div>
+        <div class = "art-map">
+            <img src = "./exhibition_img/art1_map.png" alt = "">
+        </div>
+    </div>
+
+    <div class = "art">
+        <div class = "art-pic">
+            <img src = "./exhibition_img/art2_pic.png" alt = "">
+        </div>
+        <div class = "art-info">
+            <span style = "font-size: 1.8vmax;""><strong> Absolute Dimension : 완벽한 차원 </strong></span>
+            <br><span style = "font-size: 1.4vmax;"> 이정우</span>
+            <br><span style = "font-size: 1.2vmax; color: rgb(154, 154, 154);"><strong> 2024.04.12 ~ 2024.04.29 </strong></span>
+            <div class = "art-info-bottom">
+                <span style = "font-size: 1.4vmax;"><strong> 아르떼케이 </strong></span>
+            </div>
+        </div>
+        <div class = "art-map">
+            <img src = "./exhibition_img/art2_map.png" alt = "">
+        </div>
+    </div>
+
+</body>
+</html>

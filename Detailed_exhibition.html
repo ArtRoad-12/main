@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세부전시</title>
+    <link rel="stylesheet" href="Detailed_exhibition.css" />
+</head>
+<body>
+    <div id = menubar>
+        <div id = "logo">
+            <img src = "./exhibition_img/artload_logo.png" alt="">
+        </div>
+        <div id = "menus">
+            <div class = "menu-text">
+                <p> 홈 </p>
+            </div>
+            <div class = "menu-text" onclick="location.href='./Entire_exhibition.html'">
+                <p> 전시 </p>
+            </div>
+            <div class = "menu-text">
+                <p> 작가 </p>
+            </div>
+            <div class = "menu-text">
+                <p> 지도 </p>
+            </div>
+            <div class = "menu-text">
+                <p> 도슨트 </p>
+            </div>
+            <div class = "menu-pic">
+                <img src = "./exhibition_img/mypage_logo.png" alt = "">
+            </div>
+            <div class = "menu-pic">
+                <img src = "./exhibition_img/search_icon.png" alt = "">
+            </div>
+            <div class = "empty-space"></div>
+        </div>
+    </div>
+
+    <hr style="border: solid 0.5px rgb(212, 212, 212); width: 100%">
+
+    <div id = "art">
+        <div id = "art-pic">
+            <img src = "./exhibition_img/art1_pic.png" alt = "">
+        </div>
+        <div id = "art-info">
+            <span style = "font-size: 1.9vmax;""><strong> 어떤변화 : Metamorphosis </strong></span>
+            <br><span style = "font-size: 1.5vmax;"> 노순천, 마이큐, 임정주, 정진서, 최지목</span>
+            <br><span style = "font-size: 1.3vmax; color: rgb(154, 154, 154);"><strong> 2024.04.12 ~ 2024.04.29 </strong></span>
+            <br><span style = "font-size: 1.2vmax;"> 입장료 8,000원 </span>
+            <div id = "art-info-bottom">
+                <span style = "font-size: 1.4vmax;"><strong> 김종영미술관 </strong> <span style = "color: rgb(63, 136, 247)"> (kimchongyung.com) </span>
+                <br><span style = "font-size: 1.2vmax;"> 서울 종로구 평창32길 30 </span>
+                <br><img src = "./exhibition_img/clock.png" alt = imgae" width="3.5%"><span style = "font-size: 1.2vmax;"> 10:30 ~ 18:30, 월요일 휴무 </span>
+            </div>
+        </div>
+        <div id = "art-right">
+            <div id = "buy-ticket">
+                <span style = "font-size: 1.6vmax; color: white"> 티켓 구매하기 </span> 
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: solid 0.5px rgb(212, 212, 212); width: 80%">
+
+    <!-- 참여 작가(본래 자바스크립트 이용하여 작성해야하지만 css로 간단하게 구현) -->
+    <div id = "artists-box">
+        <details id = "artists-details">
+            <summary style = "font-size: 1.8vmax"><strong> 참여작가 </strong></summary>
+            <div id = "artists">
+
+                <div class = "artist">
+                    <div class = "artist-pic">
+                        <img src = "./exhibition_img/artist_no.png" alt = "">
+                    </div>
+                    <div class = "artist-info">
+                        <span style = "font-size: 1.3vmax;"><strong> 노순천 Soon chen no </strong></span>
+                        <br>
+                        <span style = "font-size: 1.1vmax;"> 드로잉과 조각, 평면과 입체의 경계를 허무는 작가 </span>
+                    </div>
+                </div>
+
+                <div class = "artist-empty"></div>
+
+                <div class = "artist">
+                    <div class = "artist-pic">
+                        <img src = "./exhibition_img/artist_q.png" alt = "">
+                    </div>
+                    <div class = "artist-info">
+                        <span style = "font-size: 1.3vmax;"><strong> 마이큐 MY Q </strong></span>
+                        <br>
+                        <span style = "font-size: 1.1vmax;"> 음악과 미술의 장르를 넘나들며 작업하는 작가 </span>
+                    </div>
+                </div>
+
+                <div class = "artist-empty"></div>
+
+                <div class = "artist">
+                    <div class = "artist-pic">
+                        <img src = "./exhibition_img/artist_im.png" alt = "">
+                    </div>
+                    <div class = "artist-info">
+                        <span style = "font-size: 1.3vmax;"><strong> 임정주 jung joo Im </strong></span>
+                        <br>
+                        <span style = "font-size: 1.1vmax;"> 공예가로 시작해 설치와 조각의 순수예술의 작가 </span>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <hr style="border: solid 0.5px rgb(212, 212, 212); width: 80%">
+
+    <!-- 전시개요(위의 참여작가와 동일한 방법으로 구현)-->
+    <div id = "exhibition-outline">
+        <details id = "outline-details">
+            <summary style = "font-size: 1.8vmax"><strong> 전시개요 </strong></summary>
+            <div id = "outline-info">
+                <span style = "font-size: 1.2vmax; line-height: 1.7;">
+                    김종영미술관 특별기획전《어떤 변화: Metamorphosis》는 기질로부터 발현된 각자의 존재 방식에 대해 물음을 던지는 전시입니다. 
+                    <br>
+                    우리는 같은 것을 맞닥뜨렸을 때 각자의 성격과 기질이 반영된 다른 형태의 반응을 일으킵니다. 
+                    <br>
+                    일반적으로 이것을 개인의 존재감을 나타내는 개성이라 표현합니다. 
+                    <br>
+                    이번 전시에 참여한 작가들의 작업은 이처럼 자신만의 개성이 강하게 녹아있는 각자의 존재방식을 가지고 있는 것들입니다. 
+                    <br>
+                    과연 그들의 독특한 개성이 어디에서 온 것인지 탐구적 시선으로 바라보았습니다.
+                </span>
+            </div>
+        </details>
+    </div>
+</body>
+</html>

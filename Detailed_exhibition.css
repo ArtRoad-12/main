@@ -1,0 +1,230 @@
+html,
+body {
+    height: 100%;
+}
+
+#menubar {
+    margin-top: 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    position: absolute;
+    width: 90px;
+}
+
+#menus {
+    margin-left: auto;
+    height: 70px;
+    width: max-content;
+    display: flex;
+}
+
+.menu-text {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 35px;
+    margin-top: 21px;
+}
+
+.menu-text:hover {
+    color: rgb(160, 108, 227);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 35px;
+    margin-top: 21px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.menu-pic {
+    cursor: pointer;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    margin-top : 35px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-pic img {
+    position: absolute;
+    width: 22px;
+}
+
+.empty-space {
+    width: 50px;
+}
+
+#art {
+    margin: auto;
+    display: flex;
+    width: 80%;
+    height: 40%;
+    padding: 1%;
+}
+
+#art-pic {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#art-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#art-info {
+    padding-left: 1%;
+    width: 44%;
+    height: 100%;
+    position: relative;
+}
+
+#art-info-bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+#art-right {
+    width: 31%;
+    height: 100%;
+    position: relative;
+}
+
+#buy-ticket {
+    cursor: pointer;
+    background-color: rgb(160, 108, 227);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 27%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#artists-box {
+    padding: 1%;
+    margin: auto;
+    width: 80%;
+    height: 25%;
+    position: relative;
+}
+
+#artists-details {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* polidng 작업 -> 자바스크립트 사용 없이 */
+summary::-webkit-details-marker { /* Safari 브라우저용 사용자 정의 스타일 */
+    display: none;
+}
+summary {
+    display: block; /* 그 외의 브라우저용 사용자 정의 스타일 */
+}
+/* 브라우저 호환을 위해서는 위 두 사용자 정의 스타일을 모두 지정해야 함 */
+
+/* 여기서부터는 details 화살표(marker) 커스텀으로 꾸미기  */
+summary {
+    position: relative;
+    cursor: pointer;
+}
+summary::after {
+    margin: 0.6%;
+    position: absolute;
+    content: '';
+    width: 0.5em; /* 사이즈 */
+    height: 0.5em; /* 사이즈 */
+    border-top: 0.15em solid #000; /* 선 두께 */
+    border-right: 0.15em solid #000; /* 선 두께 */
+    transform: rotate(45deg); /* 각도 */
+}
+details[open] summary:after {
+    margin: 0.7%;
+    margin-left: 1%;
+    transform: rotateZ(135deg);
+}
+
+#artists {
+    width: 100%;
+    height: 87%;
+    display: flex;
+}
+
+.artist {
+    width: 27%;
+    height: 100%;
+    display: flex;
+}
+
+.artist-pic {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.artist-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.artist-info {
+    padding-left: 5%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artist-empty {
+    width: 4%;
+    height: 100%;
+}
+
+#exhibition-outline {
+    padding: 1%;
+    margin: auto;
+    width: 80%;
+    height: 25%;
+    position: relative;
+}
+
+#outline-details {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#outline-info {
+    margin-top: 2%;
+    margin-left: 0.5%;
+    width: 80%;
+    height: 87%;
+    display: flex;
+}

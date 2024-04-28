@@ -1,0 +1,174 @@
+html,
+body {
+    height: 100%;
+}
+
+#menubar {
+    margin-top: 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    position: absolute;
+    width: 90px;
+}
+
+#menus {
+    margin-left: auto;
+    height: 70px;
+    width: max-content;
+    display: flex;
+}
+
+.menu-text {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 35px;
+    margin-top: 21px;
+}
+
+.menu-text:hover {
+    color: rgb(160, 108, 227);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 35px;
+    margin-top: 21px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.menu-pic {
+    cursor: pointer;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    margin-top : 35px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-pic img {
+    position: absolute;
+    width: 22px;
+}
+
+.empty-space {
+    width: 50px;
+}
+
+#search {
+    position: relative;
+    width: 40%;
+    height: 90px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+#search-bar {
+    position: relative;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+#search-bar input {
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#search-bar img {
+    position: absolute;
+    width: 18px;
+    top: 13px;
+    right: 15px;
+}
+
+#tag-block {
+    position: relative;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: rgb(160, 108, 227);
+    border: 1px solid rgb(160, 108, 227);
+    border-radius: 50px;
+    position: relative;
+    height: 40px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: max-content;
+    font-size: 16px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+}
+
+.art {
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    width: 70%;
+    height: 30%;
+    margin-bottom: 60px;
+}
+
+.art-pic {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.art-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.art-info {
+    padding-left: 1%;
+    width: 47%;
+    height: 100%;
+    position: relative;
+}
+
+.art-info-bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+.art-map {
+    width: 31%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.art-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#bottom {
+    height: 50px;
+}
