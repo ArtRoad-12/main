@@ -1,8 +1,64 @@
 html,
 body {
     height: 100%;
+    /* 통일화하며 추가한 부분(폰트 관련)*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Bold 스타일 */
+    letter-spacing: 0px;
+    font-style: normal;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 128px;
+    padding: 0 20px;
+    background-color: #FFFF; 
+    border-bottom: 1.5px solid #DEDEDE; /* 구분선 추가 */
+}
+
+#logo {
+    width: 167px;
+    height: auto; /* 로고 이미지의 높이를 header와 동일하게 설정 */
+    position: relative;
+    left: 15px;
+    top: 13px;
+
+}
+
+nav a {
+    position: relative;
+    top: 13px;
+    left: -120px;
+    font-size: 24px;
+    letter-spacing: -2px;
+    text-decoration: none;
+    color: black;
+    margin: 0 26px;
+}
+nav a img {
+    position: relative;
+    top: 8px;
+    left: 0px;
+    margin: 0 0px;
+}
+nav img {
+    position: relative;
+    top: 20px;
+    left: -135px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #555; /* 링크에 마우스를 올렸을 때 색상 변화 */
+}
+
+/*  (통일화 전 코드)
 #menubar {
     margin-top: 30px;
     height: 70px;
@@ -69,6 +125,7 @@ body {
 .empty-space {
     width: 50px;
 }
+*/
 
 #search {
     position: relative;
@@ -170,5 +227,5 @@ body {
 }
 
 #bottom {
-    height: 50px;
+    height: 30px;
 }

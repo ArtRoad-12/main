@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>종합 전시</title>
     <link rel="stylesheet" href="Entire_exhibition.css" />
+    <!-- 글꼴가져오기 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- 아이콘 설정 -->
+    <link rel="icon" href="ci.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="ci.ico" type="image/x-icon">
 </head>
 
 <body>
+    <!-- (통일화 전 코드)
     <div id = menubar>
         <div id = "logo">
             <img src = "./exhibition_img/artload_logo.png" alt="">
@@ -39,7 +47,26 @@
     </div>
 
     <hr style="border: solid 0.5px rgb(212, 212, 212); width: 100%">
-    
+
+    -->
+
+    <header>
+        <a href="home.html">
+            <img src="home_img/ci.svg" alt="ci" id="logo">
+        </a>
+
+        <nav>
+            <a href="home.html">홈</a>
+            <a href="Entire_exhibition.html">전시</a>
+            <a href="#artist">작가</a>
+            <a href="#map">지도</a>
+            <a href="docent.html" class="select">도슨트</a>
+
+            <a href="#Account" class="account-icon"><img src="home_img/Account circle.svg" alt="Account"></a>
+            <img src="home_img/ic_baseline-search.svg" alt="Searcing">
+        </nav>
+    </header>
+
     <div id = "search">
         <div id = "search-bar">
             <img src="./exhibition_img/search_icon.png" alt="">
@@ -92,6 +119,8 @@
             <img src = "./exhibition_img/art2_map.png" alt = "">
         </div>
     </div>
+
+    <div id = "bottom"></div>
 
 </body>
 </html>
